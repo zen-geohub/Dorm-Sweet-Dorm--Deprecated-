@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apps</title>
+
+  <link rel="stylesheet" href="Apps.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="screenWrapper">
+    <div class="navBar">
+      <div class="navBarContainer">
+        <h2>Yours</h2>
+
+        <div class="navButton">
+          <button class="about" style="font-size: 18px; font-family: Montserrat;">
+            <div class="pairMenu">
+              <span class="material-symbols-outlined" style="font-size: 35px; margin-right: 10px;">
+                info
+              </span>
+              About
+            </div>
+          </button>
+
+          <button class="navMenu">
+            <div class="pairMenu">
+              <span class="material-symbols-outlined" style="font-size: 35px; margin-right: 10px;">
+                joystick
+              </span>
+              Navigation
+            </div>
+
+            <span class="material-symbols-outlined expandToggle">
+              expand_more
+            </span>
+          </button>
+
+          <div class="navMenu-content" style="display: none;">
+            <input type="number" class="bufferValue" placeholder="Write your buffer value">
+            <a href="">Hehe</a>
+            <a href="">Hehee</a>
+            <a href="">Heheee</a>
+          </div>
+        </div>
+
+        <footer>
+          <div style="position: absolute; bottom: 0;">hehe</div>
+        </footer>
+
+        <!-- <input type="number" class="bufferValue" placeholder="Write your buffer value"> -->
+      </div>
+
+      <label>
+        <input type="checkbox" class="togglePOI" style="display: none;">
+        <span class="material-symbols-outlined toggleMarker" style="font-size: 34px;">location_on</span>
+      </label>
+      
+      
+    </div>
+
+    <div id="map"></div>
+    <div id="map2"></div>
+  </div>
+
+  <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+  <script src="Apps.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+/* --------------------------Static------------------------------- */
+body {
+  margin: 0;
+  font-family: Montserrat;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#map {
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  border: none;
+}
+
+.leaflet-bar {
+  visibility: hidden;
+}
+
+.screenWrapper {
+  position: relative;
+  max-width: 100vw;
+  /* width: 100vw; */
+}
+
+.toggleMarker {
+  /* display: none; */
+}
+
+.label {
+  border: 1px solid #ff0000;
+  display: inline-block;
+  padding: 3px;
+  /* background: url("unchecked.png") no-repeat left center; */ 
+  /* padding-left: 15px; */
+}
+
+.toggleMarker:checked {
+  background-color: #f00;
+  color: #fff;
+  /* background-image: url("checked.png"); */
+}
+
+/* ----------------------------------------------------- */
+
+.navBar {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  align-items: flex-start;
+  /* left: 0; */
+}
+
+.navBarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(130deg, rgba(1,102,204,1) 40%, rgba(65,144,180,1) 100%);
+  height: 100vh;
+  width: 250px;
+  border-radius: 0px 10px 10px 0px;
+  transition: 0.5;
+}
+
+.navButton {
+  display: flex;
+  flex-direction: column; 
+}
+
+.pairMenu {
+  display: flex;
+  align-items: center;
+}
+
+.navButton button {
+  display: flex;
+  font-family: Montserrat;
+  font-size: 18px;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.navButton button:hover {
+  cursor: pointer;
+}
+
+.bufferValue {
+  margin-left: 52px;
+  font-family: montserrat;
+  width: 160px;
+}
+
+a {
+  margin-left: 52px;
+  /* transition: 0.5s; */
+}
+
+.expandToggle {
+  transition: 0.5s;
+}
+
+
+/* -----------------Dynamic------------------------ */
+.closeToggle {
+  transform: rotate(180deg);
+  /* transition: 0.5s; */
+}
+
+.toggleMarker {
+  background-color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggleMarker:hover {
+  background-color: rgba(205,205,205,1);
+  color: white;
+}
+
+input[type=checkbox]:checked +.toggleMarker {
+  color: #4CAF50;
+}
